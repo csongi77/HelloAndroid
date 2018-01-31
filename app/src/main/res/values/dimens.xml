@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_layout_heigth">300dp</dimen>
+    <dimen name="horizontal_padding">24dp</dimen>
+    <dimen name="vertical_padding">8dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="image_translation_y">-40dp</dimen>
+    <dimen name="logo_dimension">100dp</dimen>
+    <dimen name="logo_translation_x">-15dp</dimen>
+    <dimen name="logo_translation_y">-10dp</dimen>
+    <dimen name="text_layout_margin_top">12dp</dimen>
+    <dimen name="udacity_padding_horizontal">16dp</dimen>
+    <dimen name="udacity_padding_vertical">24dp</dimen>
+</resources>

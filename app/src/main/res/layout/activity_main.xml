@@ -15,37 +15,33 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
+    <!-- image: By DariaRomanova (Own work)
+    [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons -->
             <ImageView
                 android:id="@+id/image_students"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="@dimen/image_layout_heigth"
                 android:scaleType="centerCrop"
-                android:src="@drawable/students"
-                android:translationY="-20dp" />
+                android:src="@drawable/graduation"
+                android:translationY="@dimen/image_translation_y" />
 
             <TextView
                 android:id="@+id/title_udacity"
-                android:layout_alignParentBottom="true"
-                style="@style/Base.TextAppearance.AppCompat.Title"
-                android:textStyle="bold"
+                style="@style/udacity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/holo_blue_light"
-                android:paddingVertical="16dp"
-                android:paddingHorizontal="24dp"
                 android:text="@string/udacity"
-                android:textColor="@android:color/white" />
+                 />
 
             <ImageView
                 android:id="@+id/udacity_logo"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="@dimen/logo_dimension"
+                android:layout_height="@dimen/logo_dimension"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:src="@drawable/udacity_bas_mod"
-                android:translationX="-15dp"
-                android:translationY="-10dp" />
+                android:translationX="@dimen/logo_translation_x"
+                android:translationY="@dimen/logo_translation_y" />
 
         </RelativeLayout>
 
@@ -53,33 +49,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/street"
-            android:layout_marginTop="12dp"
-            android:paddingHorizontal="@dimen/horizontal_padding"
-            android:paddingVertical="@dimen/vertical_padding"
-            android:textSize="@dimen/text_size"/>
+            android:layout_marginTop="@dimen/text_layout_margin_top"
+            style="@style/info_text"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mountain_view"
-            android:textSize="@dimen/text_size"
-            android:paddingHorizontal="@dimen/horizontal_padding"
-            android:paddingVertical="@dimen/vertical_padding"/>
+            style="@style/info_text"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/phone"
-            android:textSize="@dimen/text_size"
-            android:paddingHorizontal="@dimen/horizontal_padding"
-            android:paddingVertical="@dimen/vertical_padding"/>
+            style="@style/info_text"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/web"
-            android:textSize="@dimen/text_size"
-            android:paddingHorizontal="@dimen/horizontal_padding"
-            android:paddingVertical="@dimen/vertical_padding"/>
+            style="@style/info_text"/>
     </LinearLayout>
 
 </ScrollView>
