@@ -57,17 +57,22 @@
             android:layout_height="wrap_content"
             android:text="@string/mountain_view"
             style="@style/info_text"/>
-
+    <!-- STRANGE!!! AutoLink works fine with number
+    650-555-555, but the link become invisible for
+    650-555-5555. In this case I have to use ACTION_DIAL intent... -->
         <TextView
+            android:id="@+id/phone_call"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autoLink="phone"
             android:text="@string/phone"
-            style="@style/info_text"/>
+            style="@style/info_text" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/web"
-            style="@style/info_text"/>
+            style="@style/info_text"
+            android:autoLink="web"/>
     </LinearLayout>
 
 </ScrollView>
